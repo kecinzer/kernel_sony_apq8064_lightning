@@ -1,7 +1,7 @@
 VERSION = 3
 PATCHLEVEL = 4
 SUBLEVEL = 0
-EXTRAVERSION = lightning-kernel-cm11-version-3
+EXTRAVERSION = lightning-kernel-cm11-version-9
 NAME = Saber-toothed Squirrel
 
 # *DOCUMENTATION*
@@ -382,7 +382,7 @@ KBUILD_CFLAGS   := -Wall -DNDEBUG -Wundef -Wstrict-prototypes -Wno-trigraphs \
            -ftree-loop-linear -floop-interchange -floop-strip-mine -floop-block -floop-flatten
 
 KBUILD_AFLAGS_KERNEL :=
-KBUILD_CFLAGS_KERNEL :=
+KBUILD_CFLAGS_KERNEL := 
 KBUILD_AFLAGS   := -D__ASSEMBLY__
 KBUILD_AFLAGS_MODULE  := -DMODULE
 KBUILD_CFLAGS_MODULE  := -DMODULE
