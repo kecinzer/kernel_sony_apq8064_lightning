@@ -1,5 +1,5 @@
 #
-# Makefile for intelli thermal
+# Makefile for intelli-thermal.
 #
- 
-obj-$(CONFIG_INTELLI_THERMAL)   += msm_thermal.o
+
+obj-$(CONFIG_INTELLI_THERMAL)	+= msm_thermal.o
