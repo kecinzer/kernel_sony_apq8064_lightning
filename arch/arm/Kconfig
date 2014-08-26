@@ -2271,6 +2271,7 @@ config XIP_PHYS_ADDR
 config KEXEC
 	bool "Kexec system call (EXPERIMENTAL)"
 	depends on EXPERIMENTAL && (!SMP || HOTPLUG_CPU)
+        default y
 	help
 	  kexec is a system call that implements the ability to shutdown your
 	  current kernel, and to start another kernel.  It is like a reboot
@@ -2322,7 +2323,7 @@ config KEXEC_HARDBOOT
 	  Note that hardboot support is only required in the boot kernel and any
 	  kernel capable of performing a hardboot kexec.  It is _not_ required by a
 	  kexec'd kernel.
-
+	  	 
 config CRASH_DUMP
 	bool "Build kdump crash kernel (EXPERIMENTAL)"
 	depends on EXPERIMENTAL
